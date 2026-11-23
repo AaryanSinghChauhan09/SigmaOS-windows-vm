@@ -1,4 +1,6 @@
-<p align="center">
+# fk-try-omarchy-windows
+
+> Forked from omacom/try-omarchy-windows (MIT). See `SIGMAOS_FORK.md`.
   <img src="app/OmarchyIcon.svg" width="88" height="88" alt="Try Omarchy icon">
 </p>
 
