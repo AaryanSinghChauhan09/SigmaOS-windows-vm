@@ -1,6 +1,6 @@
 [component]
-name = "try-omarchy-windows"
-id = "sigmaos-try-omarchy-windows"
+name = "sigmaos-windows-vm"
+id = "sigmaos-windows-vm"
 kind = "component"
 license = "GPL-3.0-or-later"
 
