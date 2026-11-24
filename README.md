@@ -82,3 +82,8 @@ Try Omarchy for Windows builds on [Omarchy](https://github.com/basecamp/omarchy)
 Scripts and documentation in this repository are [MIT licensed](LICENSE). Omarchy and the guest image carry their own licenses; see the [third-party notices](THIRD_PARTY_NOTICES.md). The app icon uses the [official Omarchy mark](https://omarchy.org/brand/), which remains subject to Omarchy's trademark rights.
 
 Looking for the Mac version? See [Try Omarchy for macOS](https://github.com/omacom/try-omarchy).
+## Documentation
+
+Wiki documentation is available in the SigmaOS Wiki Staging repository:
+
+- [SigmaOS Wiki Staging](https://github.com/AaryanSinghChauhan09/sigmaos-wiki-staging#SigmaOS-windows-vm) - Full Wiki documentation for all SigmaOS components
