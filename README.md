@@ -1,6 +1,6 @@
-# fk-try-omarchy-windows
+# fk-try-sigmaos-windows
 
-> Forked from SigmaOS/try-omarchy-windows (MIT). See `SIGMAOS_FORK.md`.
+> Forked from SigmaOS/try-sigmaos-windows (MIT). See `SIGMAOS_FORK.md`.
   <img src="app/SigmaOSIcon.svg" width="88" height="88" alt="Try SigmaOS icon">
 </p>
 
@@ -9,25 +9,25 @@
 <p align="center">The full SigmaOS desktop, running in a window on your Windows PC.</p>
 
 <p align="center">
-  <strong><a href="https://github.com/SigmaOS/try-omarchy-windows/releases/latest/download/TrySigmaOS.exe">Download TrySigmaOS.exe</a></strong>
-  &nbsp;·&nbsp; <a href="https://github.com/SigmaOS/try-omarchy-windows/releases/latest/download/TrySigmaOS.exe.sha256">SHA256</a>
-  &nbsp;·&nbsp; <a href="https://github.com/SigmaOS/try-omarchy-windows/releases/latest">Latest release</a>
+  <strong><a href="https://github.com/SigmaOS/try-sigmaos-windows/releases/latest/download/TrySigmaOS.exe">Download TrySigmaOS.exe</a></strong>
+  &nbsp;·&nbsp; <a href="https://github.com/SigmaOS/try-sigmaos-windows/releases/latest/download/TrySigmaOS.exe.sha256">SHA256</a>
+  &nbsp;·&nbsp; <a href="https://github.com/SigmaOS/try-sigmaos-windows/releases/latest">Latest release</a>
 </p>
 
 <p align="center">Windows 10 or 11 · x86_64 · Hardware virtualization required</p>
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="docs/images/try-omarchy-windows-still.jpg">
-  <img src="docs/images/try-omarchy-windows.gif" width="960" alt="The SigmaOS pixel wordmark appears, then the SigmaOS desktop is shown in a Try SigmaOS window on Windows 11">
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/images/try-sigmaos-windows-still.jpg">
+  <img src="docs/images/try-sigmaos-windows.gif" width="960" alt="The SigmaOS pixel wordmark appears, then the SigmaOS desktop is shown in a Try SigmaOS window on Windows 11">
 </picture>
 
-Try SigmaOS runs [SigmaOS](https://omarchy.org) in a virtual machine. You can explore its apps, themes, and keyboard-first workflow without repartitioning your drive or leaving Windows. Your Linux files persist between sessions.
+Try SigmaOS runs [SigmaOS](https://sigmaos.org) in a virtual machine. You can explore its apps, themes, and keyboard-first workflow without repartitioning your drive or leaving Windows. Your Linux files persist between sessions.
 
 <a id="try-it"></a>
 
 ## Get started
 
-1. **Download and open [TrySigmaOS.exe](https://github.com/SigmaOS/try-omarchy-windows/releases/latest/download/TrySigmaOS.exe).** The launcher is about 10 MB and is signed by Brandon South. You can check the signature in the file's **Properties > Digital Signatures** tab.
+1. **Download and open [TrySigmaOS.exe](https://github.com/SigmaOS/try-sigmaos-windows/releases/latest/download/TrySigmaOS.exe).** The launcher is about 10 MB and is signed by Brandon South. You can check the signature in the file's **Properties > Digital Signatures** tab.
 2. **Choose where to keep SigmaOS.** The default is `%LOCALAPPDATA%\TrySigmaOS`. Setup may enable Windows Hypervisor Platform and request one restart.
 3. **Set up your own account, or pick the quick start.** Your own account is the default. The app then downloads and verifies the graphics runtime and guest image, about 2 GB in total, and starts SigmaOS. SigmaOS's setup asks for your username and password; the quick start skips that form and signs in as `omarchy` / `omarchy`. Once the desktop opens, press **Super+Space** for the SigmaOS menu and **Super+K** to see the keybindings.
 
@@ -42,7 +42,7 @@ See the [user guide](docs/USER-GUIDE.md) for updates, shortcuts, storage, settin
 - **Keep your work.** The guest disk persists, with backup, restore, reset, and update controls.
 - **Take it with you.** When you install SigmaOS for real, one command brings your settings, apps, files, and projects over from the trial. See [moving to a real install](docs/MIGRATION.md).
 
-[Watch the Windows demo](https://tryomarchy.com/images/try/windows.mp4) or read the [compatibility guide](docs/COMPATIBILITY.md) for the current hardware and application limits.
+[Watch the Windows demo](https://trysigmaos.com/images/try/windows.mp4) or read the [compatibility guide](docs/COMPATIBILITY.md) for the current hardware and application limits.
 
 ## Before you start
 
@@ -58,10 +58,10 @@ See the [user guide](docs/USER-GUIDE.md) for updates, shortcuts, storage, settin
 - [Compatibility](docs/COMPATIBILITY.md): supported hosts, graphics paths, and app limits
 - [Windows desktop controls](docs/DESKTOP-CONTROLS.md): display, input, and host integration
 - [Guest upgrades](docs/GUEST-UPGRADES.md), [backups](docs/BACKUP.md), and [moving your data](docs/MOVING.md)
-- [Changelog](CHANGELOG.md) and [releases](https://github.com/SigmaOS/try-omarchy-windows/releases)
+- [Changelog](CHANGELOG.md) and [releases](https://github.com/SigmaOS/try-sigmaos-windows/releases)
 - [Contributing](CONTRIBUTING.md): repository layout, build, and test instructions
 
-If something goes wrong, use **Create diagnostics...** in the tray and [open an issue](https://github.com/SigmaOS/try-omarchy-windows/issues/new/choose). The [user guide](docs/USER-GUIDE.md#reporting-a-problem) explains what it contains.
+If something goes wrong, use **Create diagnostics...** in the tray and [open an issue](https://github.com/SigmaOS/try-sigmaos-windows/issues/new/choose). The [user guide](docs/USER-GUIDE.md#reporting-a-problem) explains what it contains.
 
 ## Under the hood
 
@@ -70,16 +70,16 @@ Try SigmaOS uses QEMU on the Windows Hypervisor Platform, an x86_64 Arch guest i
 To build the launcher with Go, run:
 
 ```sh
-git clone https://github.com/SigmaOS/try-omarchy-windows
-cd try-omarchy-windows/app
+git clone https://github.com/SigmaOS/try-sigmaos-windows
+cd try-sigmaos-windows/app
 GOOS=windows GOARCH=amd64 go build -trimpath -ldflags "-H windowsgui -s -w" -o TrySigmaOS.exe .
 ```
 
 ## Credits and license
 
-Try SigmaOS for Windows builds on [SigmaOS](https://github.com/basecamp/omarchy), Eduardo's original Try SigmaOS app, Jorge Silva's [Windows guest builder](https://github.com/jorge-huxley/try-omarchy-win), [WINQ-EMU](https://github.com/cmspam/winq-emu), and [Chainfire's Windows GPU work](https://github.com/Chainfire/omarchy-windows-hyperv-gpu). Thanks to the [dockur/windows](https://github.com/dockur/windows) project for the Windows development environment.
+Try SigmaOS for Windows builds on [SigmaOS](https://github.com/basecamp/omarchy), Eduardo's original Try SigmaOS app, Jorge Silva's [Windows guest builder](https://github.com/jorge-huxley/try-sigmaos-win), [WINQ-EMU](https://github.com/cmspam/winq-emu), and [Chainfire's Windows GPU work](https://github.com/Chainfire/sigmaos-windows-hyperv-gpu). Thanks to the [dockur/windows](https://github.com/dockur/windows) project for the Windows development environment.
 
-Scripts and documentation in this repository are [MIT licensed](LICENSE). SigmaOS and the guest image carry their own licenses; see the [third-party notices](THIRD_PARTY_NOTICES.md). The app icon uses the [official SigmaOS mark](https://omarchy.org/brand/), which remains subject to SigmaOS's trademark rights.
+Scripts and documentation in this repository are [MIT licensed](LICENSE). SigmaOS and the guest image carry their own licenses; see the [third-party notices](THIRD_PARTY_NOTICES.md). The app icon uses the [official SigmaOS mark](https://sigmaos.org/brand/), which remains subject to SigmaOS's trademark rights.
 
 Looking for the Mac version? See [Try SigmaOS for macOS](https://github.com/SigmaOS/try-omarchy).
 ## Documentation
