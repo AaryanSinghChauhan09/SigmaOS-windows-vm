@@ -29,7 +29,7 @@ Try SigmaOS runs [SigmaOS](https://sigmaos.org) in a virtual machine. You can ex
 
 1. **Download and open [TrySigmaOS.exe](https://github.com/SigmaOS/try-sigmaos-windows/releases/latest/download/TrySigmaOS.exe).** The launcher is about 10 MB and is signed by Brandon South. You can check the signature in the file's **Properties > Digital Signatures** tab.
 2. **Choose where to keep SigmaOS.** The default is `%LOCALAPPDATA%\TrySigmaOS`. Setup may enable Windows Hypervisor Platform and request one restart.
-3. **Set up your own account, or pick the quick start.** Your own account is the default. The app then downloads and verifies the graphics runtime and guest image, about 2 GB in total, and starts SigmaOS. SigmaOS's setup asks for your username and password; the quick start skips that form and signs in as `omarchy` / `omarchy`. Once the desktop opens, press **Super+Space** for the SigmaOS menu and **Super+K** to see the keybindings.
+3. **Set up your own account, or pick the quick start.** Your own account is the default. The app then downloads and verifies the graphics runtime and guest image, about 2 GB in total, and starts SigmaOS. SigmaOS's setup asks for your username and password; the quick start skips that form and signs in as `sigmaos` / `sigmaos`. Once the desktop opens, press **Super+Space** for the SigmaOS menu and **Super+K** to see the keybindings.
 
 See the [user guide](docs/USER-GUIDE.md) for updates, shortcuts, storage, settings, and removal.
 
@@ -77,11 +77,11 @@ GOOS=windows GOARCH=amd64 go build -trimpath -ldflags "-H windowsgui -s -w" -o T
 
 ## Credits and license
 
-Try SigmaOS for Windows builds on [SigmaOS](https://github.com/basecamp/omarchy), Eduardo's original Try SigmaOS app, Jorge Silva's [Windows guest builder](https://github.com/jorge-huxley/try-sigmaos-win), [WINQ-EMU](https://github.com/cmspam/winq-emu), and [Chainfire's Windows GPU work](https://github.com/Chainfire/sigmaos-windows-hyperv-gpu). Thanks to the [dockur/windows](https://github.com/dockur/windows) project for the Windows development environment.
+Try SigmaOS for Windows builds on [SigmaOS](https://github.com/AaryanSinghChauhan09/SigmaOS), Eduardo's original Try SigmaOS app, Jorge Silva's [Windows guest builder](https://github.com/jorge-huxley/try-sigmaos-win), [WINQ-EMU](https://github.com/cmspam/winq-emu), and [Chainfire's Windows GPU work](https://github.com/Chainfire/sigmaos-windows-hyperv-gpu). Thanks to the [dockur/windows](https://github.com/dockur/windows) project for the Windows development environment.
 
 Scripts and documentation in this repository are [MIT licensed](LICENSE). SigmaOS and the guest image carry their own licenses; see the [third-party notices](THIRD_PARTY_NOTICES.md). The app icon uses the [official SigmaOS mark](https://sigmaos.org/brand/), which remains subject to SigmaOS's trademark rights.
 
-Looking for the Mac version? See [Try SigmaOS for macOS](https://github.com/SigmaOS/try-omarchy).
+Looking for the Mac version? See [Try SigmaOS for macOS](https://github.com/AaryanSinghChauhan09/SigmaOS-mac-vm).
 ## Documentation
 
 Wiki documentation is available in the SigmaOS Wiki Staging repository:
